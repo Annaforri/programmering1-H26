@@ -49,6 +49,11 @@ class Student:
     def enroll_in_course(self, course):
         self.courses.append(course)
 
+    def __str__(self):
+        return (f"{self.first_name} {self.last_name} er en student på {self.age} år.")
+    def __repr__(self):
+        return (f"first_name: {self.first_name}, last_name: {self.last_name}, age: {self.age}, student_id: {self.student_id}")
+
 
 # Lager en klasse, Course. Også her må __init__ være med. Første parameter er igjen self, så kommer de parameterne vi legger til selv.
 class Course:
